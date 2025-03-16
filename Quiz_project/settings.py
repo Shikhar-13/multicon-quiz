@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-yvlnu#%v9-fvflq^8wx_xjkaa8a51gs3w^px5^&&br5&of=c_l'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['localhost', 
     '127.0.0.1', 
@@ -72,6 +72,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Quiz_project.wsgi.application'
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://multicon-154025974392.us-central1.run.app",
+]
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
