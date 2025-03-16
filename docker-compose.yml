@@ -9,14 +9,6 @@ services:
       - .:/app
     ports:
       - "8000:8000"
-    depends_on:
-      - db
-    environment:
-      - DEBUG=True
-      - DB_HOST=db
-      - DB_NAME=django_db
-      - DB_USER=django_user
-      - DB_PASS=django_password
 
 volumes:
   postgres_data:
