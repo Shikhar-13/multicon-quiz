@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', 
     '127.0.0.1', 
-    '0.0.0.0', '.vercel.app','https://multicon-quiz-154025974392.us-central1.run.app']
+    '0.0.0.0', '.vercel.app','multicon-154025974392.us-central1.run.app']
 
 
 # Application definition
