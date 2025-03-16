@@ -18,18 +18,5 @@ services:
       - DB_USER=django_user
       - DB_PASS=django_password
 
-  db:
-    image: postgres:15
-    container_name: postgres_db
-    restart: always
-    environment:
-      POSTGRES_DB: django_db
-      POSTGRES_USER: avnadmin
-      POSTGRES_PASSWORD: AVNS_jyX2qq_-mgnKiwW6Mc
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-    ports:
-      - "5432:5432"
-
 volumes:
   postgres_data:
